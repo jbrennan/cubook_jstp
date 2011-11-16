@@ -362,7 +362,7 @@ Each newsflash object that appears in the API will look like the following:
 
 ###Posting a Newsflash
 
-	POST "/flashboards/#course/addnewsflash"
+	POST "/flashboards/#course/add_newsflash"
 
 This post requires an object like the following message body in the Request:
 
@@ -374,6 +374,17 @@ This post requires an object like the following message body in the Request:
 	}
 
 This method returns the exact same newsflash object on success, or an error on failure (for example, if the user was not authorized to post a newsflash to the specified flashboard).
+
+###Deleting a Newsflash
+
+	DELETE "/flashboards/#course/delete_newsflash"
+	...login headers
+	
+	{
+		newsflash-id: "someid1234"
+	}
+
+This method deletes a user's newsflash so long as they are authorized to do so. Responds with an error if the user is not authorized. On success, the message body is empty (i.e. `{}`).
 
 ###Creating a Flashsegment
 
