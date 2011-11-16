@@ -184,8 +184,6 @@ A notification is just like a Response from the Server, except it comes without 
 It is a returned object resembling a Response object with the exception of the `status` string being `Notification` instead of `OK`.
 
 
-#NEED FEEDBACK HERE#
-
 Network Datastructures (for Sockets)
 ------------------------------------
 
