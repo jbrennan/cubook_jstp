@@ -236,6 +236,8 @@ The above message body should be POST'ed with the request, sending along the inp
 
 If `nickname-accepted` is `true` then everything is good and the user may use the application. If the value was `false` then the user needs to pick a different nickname and try the process over again.
 
+**Note**: Your client can make this post again in the future if the user wishes to change their nickname or icon.
+
 ###User info
 
 **Note**: In all example requests containing `#username`, this means whatever login name you use to find a user in your system (this is *not* the user's avatar/nickname).
