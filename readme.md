@@ -369,6 +369,7 @@ Each newsflash object that appears in the API will look like the following:
 This post requires an object like the following message body in the Request:
 
 	{
+		in-segment: "segmentID",
 		html-text: "This is a newflash with a <a href='http://google.com'>link</a> and an image %@",
 		binaries: [
 			"binaryImage1=="
